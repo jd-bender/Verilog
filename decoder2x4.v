@@ -14,8 +14,7 @@ module DecoderMod(s, o); // module definition
    and(o[0], s_inv[0], s_inv[1]);
    and(o[1], s_inv[1], s[0]);
    and(o[2], s_inv[0], s[1]);
-   and(o[3], s[0], s[1]);
-      
+   and(o[3], s[0], s[1]);    
 endmodule
 
 module TestMod;
