@@ -1,9 +1,6 @@
 // Put Your Full Name Here
 //
 // mux2x1.v, 2x1 multiplexor, gate synthesis
-//
-// how to compile: ~changw/ivl/bin/iverilog mux2x1.v
-// how to run: ./a.out
 
 module MuxMod(s, d0, d1, o);
    input s, d0, d1;
@@ -22,8 +19,6 @@ module TestMod;
    wire o;
 
    MuxMod my_mux(s, d0, d1, o);
-
-//  initial #8 $finish; // end at $time 8
 
    initial begin
       $display("Time\ts\td0\td1\to");
