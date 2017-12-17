@@ -1,7 +1,6 @@
 // Jacob Bender
 
 module TestMod;
-
    reg CLK, RST;
    wire [6:0] ascii;
    wire [4:0] ripple;
@@ -25,11 +24,9 @@ module TestMod;
       CLK = 1;
       #2;
    end
-
 endmodule
 
 module PatternEncoderMod(input [4:0] ripple_out, output [6:0] ascii);
-
    reg [6:0] ascii;
 
    always @(*) begin
@@ -59,7 +56,6 @@ module PatternEncoderMod(input [4:0] ripple_out, output [6:0] ascii);
 endmodule
 
 module RippleMod(input CLK, RST, output [4:0] out2);
-
    reg [4:0] out1;
    reg [4:0] out2;
 
